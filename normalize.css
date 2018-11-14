@@ -264,5 +264,13 @@ details {
 }
 
 #container {
-  padding-top: 40px;
+  padding-top: 150px;
+}
+
+#header-img {
+  display: block;
+  height: auto;
+  margin: 1em auto;
+  max-width: 50%;
+
 }
