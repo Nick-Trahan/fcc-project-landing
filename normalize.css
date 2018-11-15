@@ -262,6 +262,7 @@ details {
   max-width: 850PX;
   top: 47%;
   transform: translateY(-53%);
+  -webkit-transform: translateY(-53%);
 }
 
 #nav-bar {
