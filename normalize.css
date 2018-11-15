@@ -251,6 +251,8 @@ details {
   position: fixed;
   width: 100vw;
   height: 150px;
+  z-index: 10;
+  background-color: black;
 }
 
 #header-img {
@@ -282,8 +284,30 @@ details {
 
 .nav-link:link, .nav-link:visited {
   text-decoration: none;
+  color: silver;
 }
 
 #container {
   padding-top: 150px;
+}
+
+#page-one {
+  position: relative;
+  /*height: 100vh;*/
+  height: calc(100vh - 150px);
+  background-color:aliceblue
+}
+
+#page-two {
+  position: relative;
+  /*height: 100vh;*/
+  height: calc(100vh - 150px);
+  background-color: coral;
+}
+
+#page-three {
+  position: relative;
+  /*height: 100vh;*/
+  height: calc(100vh - 150px);
+  background-color:cornsilk;
 }
