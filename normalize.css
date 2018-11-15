@@ -259,7 +259,7 @@ details {
   margin: auto;
   min-width: 425px;
   width: 70%;
-  max-width: 850PX;
+  max-width: 850px;
   top: 47%;
   transform: translateY(-53%);
   -webkit-transform: translateY(-53%);
@@ -272,14 +272,17 @@ details {
 }
 
 #nav-list {
+  list-style-type: none;
   display: flex;
-  padding-inline-start: 0;
+  padding: 0;
   justify-content: space-around;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1180px
 }
 
-/*.nav-item {
-}*/
+.nav-link:link, .nav-link:visited {
+  text-decoration: none;
+}
 
 #container {
   padding-top: 150px;
