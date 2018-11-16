@@ -253,6 +253,10 @@ details {
   height: 150px;
   z-index: 10;
   background-color: black;
+  background-image: url(./media/header-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #header-img {
@@ -295,7 +299,11 @@ details {
   position: relative;
   /*height: 100vh;*/
   height: calc(100vh - 150px);
-  background-color:aliceblue
+  background-image: url(./media/pg-one-bg.png);
+  background-color: aliceblue;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #page-two {
