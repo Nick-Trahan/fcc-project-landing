@@ -247,6 +247,13 @@ details {
 
 /* Begin custom css
    ========================================================================== */
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  scroll-padding: 9.375em;
+}
+
 #header {    
   position: fixed;
   width: 100vw;
@@ -295,10 +302,12 @@ details {
   padding-top: 9.375em;
 }
 
-#page-one {
-  position: relative;
-  /*height: 100vh;*/
+main > div {
   height: calc(100vh - 9.375em);
+  scroll-snap-align: start;
+}
+
+#page-one {
   background-image: url(./media/pg-one-bg.png);
   background-color: aliceblue;
   background-repeat: no-repeat;
@@ -307,15 +316,9 @@ details {
 }
 
 #page-two {
-  position: relative;
-  /*height: 100vh;*/
-  height: calc(100vh - 9.375em);
   background-color: coral;
 }
 
 #page-three {
-  position: relative;
-  /*height: 100vh;*/
-  height: calc(100vh - 9.375em);
-  background-color:cornsilk;
+  background-color: cornsilk;
 }
