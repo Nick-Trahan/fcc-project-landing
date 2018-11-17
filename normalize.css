@@ -314,23 +314,17 @@ header:after {
   padding-top: 9.375em;
 }
 
-main > div {
-  height: calc(100vh - 9.375em);
-  scroll-snap-align: start;
-}
-
-#page-one {
+main {
   background-image: url(./media/pg-one-bg.png);
-  background-color: aliceblue;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+
 }
 
-#page-two {
-  background-color: coral;
-}
-
-#page-three {
-  background-color: cornsilk;
+main > div {
+  height: calc(100vh - 9.375em);
+  scroll-snap-align: start;
+  background-color: transparent;
 }
