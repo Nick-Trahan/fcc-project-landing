@@ -247,6 +247,14 @@ details {
 
 /* Begin custom css
    ========================================================================== */
+@font-face {
+  font-family: "Hyundai Sans Head"
+  src: url(./media/fonts/HyundaiSansHeading-Regular.woff2) format('woff2'),
+    url(./media/fonts/HyundaiSansHeading-Regular.woff) format('woff');
+
+}
+
+
 body {
   overflow-x: hidden;
   overflow-y: auto;
@@ -265,6 +273,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  font-family: 'Hyundai Sans Head', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-feature-settings: "onum" 1, "pnum" 1, "kern" 1, "ss01" 1;
+  font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 header:after {
@@ -274,8 +288,8 @@ header:after {
   height: 4px;
   background-image: linear-gradient(45deg, #b22222 0%, #a70202 25%, #740000 50%, #8b0000 75%, #800000 100%);
   position: absolute;
-     bottom: -2px;
-     left: 0px;
+  bottom: -2px;
+  left: 0px;
 }
 
 #header-img {
