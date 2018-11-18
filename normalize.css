@@ -252,6 +252,9 @@ details {
   src: url(./media/fonts/HyundaiSansHeading-Regular.woff2) format('woff2'),
     url(./media/fonts/HyundaiSansHeading-Regular.woff) format('woff');
 
+  font-family: "Hyundai Sans Text"
+  src: url(./media/fonts/HyundaiSansText-Regular.woff2) format('woff2'),
+    url(./media/fonts/HyundaiSansText-Regular.woff) format('woff');
 }
 
 
@@ -273,8 +276,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  font-family: 'Hyundai Sans Head', Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-family: 'Hyundai Sans Head', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bolder;
   font-feature-settings: "onum" 1, "pnum" 1, "kern" 1, "ss01" 1;
   font-kerning: normal;
   -webkit-font-smoothing: antialiased;
