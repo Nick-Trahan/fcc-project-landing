@@ -299,7 +299,7 @@ header:after {
   position: relative;
   display: block;
   margin: auto;
-  min-width: 26.563em;
+  min-width: 23em;
   width: 70%;
   max-width: 53.125em;
   top: 47%;
@@ -344,4 +344,10 @@ main > div {
   height: calc(100vh - 9.375em);
   scroll-snap-align: start;
   background-color: transparent;
+}
+
+#media-pg {
+  display: grid;
+  grid-template-columns: 40% 15% 15% 15% 15%;
+  grid-template-rows: 20% 30% 30% 20%;
 }
