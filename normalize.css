@@ -370,6 +370,11 @@ main > div {
   align-items: center;
 }
 
+#video {
+  padding: 5px;
+  background-color: white;
+}
+
 .pic-frame {
   display: flex;
   justify-content: center;
@@ -421,4 +426,6 @@ main > div {
 .gallery-pic {
   width: 120px;
   height: auto;
+  padding: 5px;
+  background-color: white;
 }
