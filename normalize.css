@@ -248,11 +248,11 @@ details {
 /* Begin custom css
    ========================================================================== */
 @font-face {
-  font-family: "Hyundai Sans Head"
-  src: url(./media/fonts/HyundaiSansHeading-Regular.woff2) format('woff2'),
-    url(./media/fonts/HyundaiSansHeading-Regular.woff) format('woff');
+  font-family: "Hyundai Sans Head";
+  src: url(./media/fonts/HyundaiSansHead-Regular.woff2) format('woff2'),
+    url(./media/fonts/HyundaiSansHead-Regular.woff) format('woff');
 
-  font-family: "Hyundai Sans Text"
+  font-family: "Hyundai Sans Text";
   src: url(./media/fonts/HyundaiSansText-Regular.woff2) format('woff2'),
     url(./media/fonts/HyundaiSansText-Regular.woff) format('woff');
 }
@@ -360,11 +360,20 @@ main > div {
   }
 }
 
-#video {
+#video-div {
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #frm-one {
@@ -407,4 +416,9 @@ main > div {
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
+}
+
+.gallery-pic {
+  width: 120px;
+  height: auto;
 }
