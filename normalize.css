@@ -324,7 +324,7 @@ header:after {
 
 .nav-link:link, .nav-link:visited {
   text-decoration: none;
-  color: silver;
+  color: whitesmoke;
 }
 
 #container {
@@ -356,7 +356,7 @@ main > div {
   #intro-div {
     display: grid;
     grid-template-columns: 15% 70% 15%;
-    grid-template-rows: 1fr 1fr auto;
+    grid-template-rows: 0.80fr 1fr auto;
   }
 
   #intro-heading-div {
@@ -415,6 +415,7 @@ main > div {
   background-color: rgba(51,60,76, 0.9);
   padding: 6px;
   border: 5px solid white;
+  border-image: linear-gradient(45deg, #b22222 0%, #a70202 25%, #740000 50%, #8b0000 75%, #800000 100%) 30;
 }
 
 #media-pg {
@@ -444,6 +445,7 @@ main > div {
 #video {
   padding: 5px;
   background-color: white;
+  background-image: linear-gradient(45deg, #b22222 0%, #a70202 25%, #740000 50%, #8b0000 75%, #800000 100%);
 }
 
 .pic-frame {
@@ -499,4 +501,5 @@ main > div {
   height: auto;
   padding: 5px;
   background-color: white;
+  background-image: linear-gradient(45deg, #b22222 0%, #a70202 25%, #740000 50%, #8b0000 75%, #800000 100%);
 }
