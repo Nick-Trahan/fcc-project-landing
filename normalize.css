@@ -503,3 +503,42 @@ main > div {
   background-color: white;
   background-image: linear-gradient(45deg, #b22222 0%, #a70202 25%, #740000 50%, #8b0000 75%, #800000 100%);
 }
+
+#info-pg {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+}
+
+#form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  background-color: rgba(51,60,76, 0.9);
+  padding: 5px;
+  border: 5px solid white;
+  border-image: linear-gradient(45deg, #b22222 0%, #a70202 25%, #740000 50%, #8b0000 75%, #800000 100%) 30;
+}
+
+fieldset {
+  
+}
+
+#info-lgnd {
+  font-family: 'Hyundai Sans Head', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  color: whitesmoke;
+}
+
+#email {
+  font-family: 'Hyundai Sans Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#submit {
+  font-family: 'Hyundai Sans Head', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
