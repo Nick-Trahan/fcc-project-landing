@@ -514,8 +514,8 @@ main > div {
   display: flex;
   align-items: center;
   justify-content: center;
-  grid-column-start: 3;
-  grid-column-end: 6;
+  grid-column-start: 2;
+  grid-column-end: 7;
   grid-row-start: 3;
   grid-row-end: 6;
   background-color: rgba(51,60,76, 0.9);
@@ -524,6 +524,14 @@ main > div {
   border-image: linear-gradient(45deg, #b22222 0%, #a70202 25%, #740000 50%, #8b0000 75%, #800000 100%) 30;
 }
 
+@media only screen and (min-width: 768px) {
+  #form {
+   grid-column-start: 3;
+   grid-column-end: 6;
+   grid-row-start: 3;
+   grid-row-end: 6;
+  }
+}
 fieldset {
   
 }
