@@ -260,7 +260,7 @@ details {
 body {
   overflow-x: hidden;
   overflow-y: auto;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory; /* Scroll snap is not well supported yet, find a better option. */
   scroll-padding: 9.375em;
 }
 
@@ -269,20 +269,22 @@ body {
   box-sizing: border-box;
   width: 100vw;
   height: 9.375em;
-  z-index: 10;
+  z-index: 10; /* Keeps header on top. */
   background-color: black;
   background-image: url(./media/header-img/header-img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  font-family: 'Hyundai Sans Head', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Hyundai Sans Head', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; /* Custom font issues in Chrome on Windows? */
   font-weight: bolder;
-  font-feature-settings: 'kern' 1;
+  font-feature-settings: 'kern' 1;/* Research kerning more. Maybe this isn't needed. */
   font-kerning: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Look for a better way to do this (border with gradient under header)
+============================================================================= */
 header:after {
   content: ' ';
   display: block;
@@ -292,7 +294,7 @@ header:after {
   position: absolute;
   bottom: -0.125em;
   left: 0;
-}
+}/*=========================================================================== */
 
 #header-img {
   position: relative;
@@ -302,7 +304,7 @@ header:after {
   width: 70%;
   max-width: 53.125em;
   top: 47%;
-  transform: translateY(-53%);
+  transform: translateY(-53%); /* Makes the logo responsive without distorting */
   -webkit-transform: translateY(-53%);
 }
 
@@ -336,7 +338,6 @@ main {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-
 }
 
 main > div {
@@ -351,35 +352,6 @@ main > div {
   grid-template-rows: auto;
 }
 
-@media only screen and (min-width: 800px) {
-  #intro-div {
-    display: grid;
-    grid-template-columns: 15% 70% 15%;
-    grid-template-rows: 0.80fr 1fr auto;
-  }
-
-  #intro-heading-div {
-    grid-area: 2 / 2 / 3 / 4;
-  }
-}
-
-
-@media only screen and (min-width: 1400px) {
-  #intro-div {
-    display: grid;
-    grid-template-columns: 5% 40% 65%;
-    grid-template-rows: 0.50fr 0.05fr 0.95fr 1.50fr;
-  }
-
-  #intro-heading-div {
-    grid-area: 2 / 2 / 3 / 4;
-  }
-
-  #intro-words {
-    grid-area: 2 / 2 / 3 / 4;
-  }
-}
-
 #intro-heading-div {
   font-family: 'Hyundai Sans Head', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-weight: 500;
@@ -387,7 +359,7 @@ main > div {
   display: flex;
   justify-content: center;
   margin: 0 0.625em;
-  grid-area: 2 / 2 / 3 / 3;
+  grid-area: 1 / 2 / 2 / 3;
 }
 
 #intro-words {
@@ -400,6 +372,34 @@ main > div {
   padding: 0.375em;
   border: 5px solid whitesmoke;
   border-image: linear-gradient(45deg, #b22222 0%, #a70202 25%, #740000 50%, #8b0000 75%, #800000 100%) 30;
+}
+
+@media only screen and (min-width: 800px) {
+  #intro-div {
+    display: grid;
+    grid-template-columns: 0.75fr 4fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
+  }
+
+  #intro-heading-div {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  #intro-div {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 4fr;
+    grid-template-rows: 2fr 1fr auto;
+  }
+
+  #intro-heading-div {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  #intro-words {
+    grid-area: 3 / 2 / 4 / 3;
+  }
 }
 
 #media-pg {
