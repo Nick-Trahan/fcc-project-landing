@@ -271,7 +271,7 @@ body {
   height: 9.375em;
   z-index: 10;
   background-color: black;
-  background-image: url(./media/header-img.png);
+  background-image: url(./media/header-img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -331,7 +331,7 @@ header:after {
 }
 
 main {
-  background-image: url(./media/pg-one-bg.png);
+  background-image: url(./media/pg-one-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
