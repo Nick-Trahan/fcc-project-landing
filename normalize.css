@@ -342,7 +342,7 @@ main {
 
 main > div {
   height: calc(100vh - 9.375em);
-  scroll-snap-align: start;
+  scroll-snap-align: start; /* More scroll snap */
   background-color: transparent;
 }
 
@@ -374,11 +374,11 @@ main > div {
   border-image: linear-gradient(45deg, #b22222 0%, #a70202 25%, #740000 50%, #8b0000 75%, #800000 100%) 30;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 800px) { /* iPad and the like */
   #intro-div {
     display: grid;
     grid-template-columns: 0.75fr 4fr 1fr;
-    grid-template-rows: 1fr 1fr auto;
+    grid-template-rows: 5vh 1fr auto;
   }
 
   #intro-heading-div {
@@ -386,11 +386,11 @@ main > div {
   }
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1400px) { /* Offsets text for larger screens */
   #intro-div {
     display: grid;
     grid-template-columns: 0.5fr 3fr 4fr;
-    grid-template-rows: 2fr 1fr auto;
+    grid-template-rows: 15vh 1fr auto;
   }
 
   #intro-heading-div {
@@ -399,6 +399,28 @@ main > div {
 
   #intro-words {
     grid-area: 3 / 2 / 4 / 3;
+  }
+}
+
+@media only screen and (max-height: 500px) { /* For landscape views */
+  body {
+    scroll-padding: 25vh;
+  }
+
+  #header {
+    height: 25%;
+  }
+
+  #container {
+    padding-top: 25vh;
+  }
+
+  #intro-heading {
+    font-size: 1.5em;
+  }
+
+  main > div {
+    height: 75vh;
   }
 }
 
@@ -478,12 +500,6 @@ main > div {
   border-image: linear-gradient(45deg, #b22222 0%, #a70202 25%, #740000 50%, #8b0000 75%, #800000 100%) 30;
 }
 
-@media only screen and (min-width: 768px) {
-  #form {
-   min-width: 40%;
-  }
-}
-
 #info-box {
   text-align: center;
 }
@@ -520,4 +536,10 @@ main > div {
 
 #submit:active {
   transform: scale(0.95);
+}
+
+@media only screen and (min-width: 768px) {
+  #form {
+   min-width: 40%;
+  }
 }
