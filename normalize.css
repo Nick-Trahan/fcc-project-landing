@@ -283,7 +283,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Look for a better way to do this (border with gradient under header)
+/* Is there a better way to do this (bottom-only border with gradient)?
 ============================================================================= */
 header:after {
   content: ' ';
@@ -424,7 +424,7 @@ main > div {
 }
 
 .gallery-pic {
-  width: 110px;
+  width: 6.875em;
   height: auto;
   padding: 0.313em;
   background-color: whitesmoke;
@@ -488,6 +488,8 @@ main > div {
   transform: scale(0.95);
 }
 
+/* Media Queries go here
+============================================================================= */
 
 @media only screen and (min-width: 800px) { /* iPad and the like */
   #intro-div {
@@ -500,13 +502,20 @@ main > div {
     grid-area: 2 / 2 / 3 / 3;
   }
 
+  #video {
+    width: 31.25em;
+  }
+
+  .gallery-pic {
+    width: 9.375em;
+  }
+
   #form {
     min-width: 40%;
   }
-
 }
 
-@media only screen and (min-width: 1400px) { /* Offsets text for larger screens */
+@media only screen and (min-width: 1400px) and (min-height: 1000px){ /* Offsets text for larger screens, make video player and gallery pics larger */
   #intro-div {
     display: grid;
     grid-template-rows: 15vh 1fr auto;
@@ -519,6 +528,14 @@ main > div {
 
   #intro-words {
     grid-area: 3 / 2 / 4 / 3;
+  }
+
+  #video {
+    min-width: 37.50em;
+  }
+
+  .gallery-pic {
+    width: 12.50em;
   }
 }
 
@@ -551,7 +568,7 @@ main > div {
   #video-div {
     grid-area: 1 / 1 / 4 / 2;
     margin: 0 auto;
-    width: 400px;
+    width: 25em;
   }
 
   #frm-one {
@@ -579,6 +596,6 @@ main > div {
   }
 
   .gallery-pic {
-    width: 95px;
+    width: 5.938em;
   }
 }
